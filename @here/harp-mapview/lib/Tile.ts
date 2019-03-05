@@ -18,11 +18,11 @@ import {
     isExtrudedLineTechnique,
     isExtrudedPolygonTechnique,
     isFillTechnique,
-    isInterpolatedProperty,
     isSolidLineTechnique,
     isSquaresTechnique,
     isStandardTechnique,
     isStandardTexturedTechnique,
+    isTextTechnique,
     LineMarkerTechnique,
     PoiTechnique,
     StandardExtrudedLineTechnique,
@@ -925,7 +925,7 @@ export class Tile implements CachedResource {
             let maxPathLengthSqr = 0;
             for (const textPath of this.preparedTextPaths) {
                 const technique = decodedTile.techniques[textPath.technique];
-                if (technique.name !== "text") {
+                if (!isTextTechnique(technique)) {
                     continue;
                 }
                 if (textPath.pathLengthSqr > maxPathLengthSqr) {
@@ -935,7 +935,7 @@ export class Tile implements CachedResource {
 
             for (const textPath of this.preparedTextPaths) {
                 const technique = decodedTile.techniques[textPath.technique];
-                if (technique.name !== "text") {
+                if (!isTextTechnique(technique)) {
                     continue;
                 }
 
@@ -992,7 +992,7 @@ export class Tile implements CachedResource {
 
                 const technique = decodedTile.techniques[text.technique];
 
-                if (technique.name !== "text") {
+                if (!isTextTechnique(technique)) {
                     continue;
                 }
 
@@ -1345,7 +1345,7 @@ export class Tile implements CachedResource {
                 }
 
                 const renderDepthPrePass =
-                    technique.name === "extruded-polygon" && isRenderDepthPrePassEnabled(technique);
+                    isExtrudedPolygonTechnique(technique) && isRenderDepthPrePassEnabled(technique);
 
                 if (renderDepthPrePass) {
                     const depthPassMesh = createDepthPrePassMesh(object as THREE.Mesh);
@@ -1674,10 +1674,10 @@ export class Tile implements CachedResource {
     private addFeatureData(srcGeometry: Geometry, technique: Technique, object: THREE.Object3D) {
         if (
             ((srcGeometry.featureIds !== undefined && srcGeometry.featureIds.length > 0) ||
-                technique.name === "circles" ||
-                technique.name === "squares") &&
-            technique.name !== "solid-line" &&
-            technique.name !== "dashed-line"
+                isCirclesTechnique(technique) ||
+                isSquaresTechnique(technique)) &&
+            !isSolidLineTechnique(technique) &&
+            !isDashedLineTechnique(technique)
         ) {
             const featureData: TileFeatureData = {
                 geometryType: srcGeometry.type,

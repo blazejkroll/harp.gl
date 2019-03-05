@@ -18,14 +18,22 @@ import {
     Group,
     IMeshBuffers,
     InterleavedBufferAttribute,
+    isDashedLineTechnique,
+    isExtrudedLineTechnique,
     isExtrudedPolygonTechnique,
     isFillTechnique,
+    isLineTechnique,
+    isNoneTechnique,
+    isPoiTechnique,
+    isSolidLineTechnique,
     isStandardTexturedTechnique,
+    isTextTechnique,
     LineMarkerTechnique,
     PoiGeometry,
     PoiTechnique,
     StyleSetEvaluator,
     Technique,
+    TechniqueId,
     TextGeometry,
     TextPathGeometry,
     TextTechnique,
@@ -154,12 +162,12 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
             const { positions, texts, featureIds, imageTextures } = meshBuffers;
 
             const shouldCreateTextGeometries =
-                technique.name === "text" || technique.name === "labeled-icon";
+                isTextTechnique(technique) || isPoiTechnique(technique);
 
             let imageTexture: string | undefined;
-            const isPoiTechnique = technique.name === "labeled-icon";
+            const wantsPoi = isPoiTechnique(technique);
 
-            if (isPoiTechnique) {
+            if (wantsPoi) {
                 const poiTechnique = technique as PoiTechnique;
                 imageTexture = poiTechnique.imageTexture;
 
@@ -328,9 +336,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                 );
             }
 
-            const techniqueName = technique.name;
-
-            if (techniqueName === "line") {
+            if (isLineTechnique(technique)) {
                 applyLineTechnique(
                     this.m_simpleLines,
                     technique,
@@ -338,7 +344,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                     this.m_gatherFeatureIds,
                     LineType.Simple
                 );
-            } else if (techniqueName === "solid-line") {
+            } else if (isSolidLineTechnique(technique)) {
                 applyLineTechnique(
                     this.m_solidLines,
                     technique,
@@ -346,7 +352,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                     this.m_gatherFeatureIds,
                     LineType.Complex
                 );
-            } else if (techniqueName === "dashed-line") {
+            } else if (isDashedLineTechnique(technique)) {
                 applyLineTechnique(
                     this.m_dashedLines,
                     technique,
@@ -354,7 +360,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                     this.m_gatherFeatureIds,
                     LineType.Complex
                 );
-            } else if (techniqueName === "text" || techniqueName === "line-marker") {
+            } else if (isTextTechnique(technique) || isPoiTechnique(technique)) {
                 const textTechnique = technique as TextTechnique;
                 const textLabel = textTechnique.label;
                 const useAbbreviation = textTechnique.useAbbreviation as boolean;
@@ -369,7 +375,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                               this.m_languages
                           );
 
-                if (techniqueName === "text") {
+                if (isTextTechnique(technique)) {
                     if (text === undefined) {
                         continue;
                     }
@@ -414,7 +420,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                         });
                     }
                 }
-            } else if (techniqueName === "extruded-line") {
+            } else if (isExtrudedLineTechnique(technique)) {
                 const meshBuffers = this.findOrCreateMeshBuffers(
                     techniqueIndex,
                     GeometryType.ExtrudedLine
@@ -425,10 +431,8 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                 const { positions, indices, groups, featureIds, featureStarts } = meshBuffers;
                 const start = indices.length;
 
-                const extrudedLineTechnique = technique as BasicExtrudedLineTechnique;
-
                 const lineWidth = getPropertyValue(
-                    extrudedLineTechnique.lineWidth,
+                    technique.lineWidth,
                     this.m_decodeInfo.displayZoomLevel
                 );
 
@@ -437,9 +441,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                 }
 
                 const addCircle =
-                    wantCircle &&
-                    (extrudedLineTechnique.caps === undefined ||
-                        extrudedLineTechnique.caps === "Circle");
+                    wantCircle && (technique.caps === undefined || technique.caps === "Circle");
 
                 lines.forEach(aLine => {
                     triangulateLine(aLine, lineWidth, positions, indices, addCircle);
@@ -452,7 +454,8 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
 
                 const count = indices.length - start;
                 groups.push({ start, count, technique: techniqueIndex, featureId });
-            } else if (techniqueName !== "none") {
+            } else if (!isNoneTechnique(technique)) {
+                const techniqueName = (technique as Partial<TechniqueId>).name;
                 logger.warn(
                     `OmvDecodedTileEmitter#processLineFeature: Invalid line technique
                      ${techniqueName} for layer: ${env.entries.$layer} `
@@ -713,7 +716,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
             const positionCount = (positions.length - basePosition) / 3;
             const count = indices.length - start;
 
-            if (technique.name === "extruded-polygon") {
+            if (isExtrudedPolygonTechnique(technique)) {
                 const color = new THREE.Color(
                     this.isColorStringValid(technique.color)
                         ? technique.color
@@ -790,7 +793,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
 
             const positionElements = new Float32Array(meshBuffers.positions);
 
-            if (meshBuffers.texts.length > 0 && technique.name === "text") {
+            if (meshBuffers.texts.length > 0 && isTextTechnique(technique)) {
                 this.m_textGeometries.push({
                     positions: {
                         name: "position",
@@ -806,7 +809,7 @@ export class OmvDecodedTileEmitter implements IOmvEmitter {
                 return;
             }
 
-            if (meshBuffers.texts.length > 0 && technique.name === "labeled-icon") {
+            if (meshBuffers.texts.length > 0 && isPoiTechnique(technique)) {
                 this.m_poiGeometries.push({
                     positions: {
                         name: "position",

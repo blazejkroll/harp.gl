@@ -9,6 +9,7 @@ import {
     getPropertyValue,
     ImageTexture,
     isLineMarkerTechnique,
+    isPoiTechnique,
     LineMarkerTechnique,
     PoiGeometry,
     PoiTechnique
@@ -81,7 +82,8 @@ export class PoiManager {
             assert(poiGeometry.technique !== undefined);
             const techniqueIndex = assertExists(poiGeometry.technique);
             const technique = decodedTile.techniques[techniqueIndex];
-            if (technique.name !== "line-marker" && technique.name !== "labeled-icon") {
+
+            if (!isLineMarkerTechnique(technique) && !isPoiTechnique(technique)) {
                 continue;
             }
 

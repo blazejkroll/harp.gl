@@ -6,6 +6,7 @@
 
 import {
     DecodedTile,
+    getPropertyValue,
     isPoiTechnique,
     isTextTechnique,
     PoiTechnique,
