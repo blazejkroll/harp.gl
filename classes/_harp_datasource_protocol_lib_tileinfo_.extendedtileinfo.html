@@ -1,0 +1,730 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ExtendedTileInfo | harp.gl</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">harp.gl</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_harp_datasource_protocol_lib_tileinfo_.html">&quot;harp-datasource-protocol/lib/TileInfo&quot;</a>
+				</li>
+				<li>
+					<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html">ExtendedTileInfo</a>
+				</li>
+			</ul>
+			<h1>Class ExtendedTileInfo</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Class to hold infos from <a href="_harp_omv_datasource_lib_omvtile_.omvtile.html">OmvTile</a>s. Optimized for fast serialization when being passed from
+							webworker to main thread. No methods, since the object is being passed across &quot;process
+						boundaries&quot; to the web worker.</p>
+					</div>
+					<p>Supporting methods in namespace <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html">ExtendedTileInfo</a>.</p>
+					<p>Due to the complexity of the access, there are supporting classes to store and access data in
+					the feature groups. See <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfowriter.html">ExtendedTileInfoWriter</a> and <a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.extendedtileinfopolygonaccessor.html">ExtendedTileInfoPolygonAccessor</a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ExtendedTileInfo</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html" class="tsd-signature-type">TileInfo</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#classcatalog" class="tsd-kind-icon">class<wbr>Catalog</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#layercatalog" class="tsd-kind-icon">layer<wbr>Catalog</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#linegroup" class="tsd-kind-icon">line<wbr>Group</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#pointgroup" class="tsd-kind-icon">point<wbr>Group</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#polygongroup" class="tsd-kind-icon">polygon<wbr>Group</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#setuptime" class="tsd-kind-icon">setup<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#techniquecatalog" class="tsd-kind-icon">technique<wbr>Catalog</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#textcatalog" class="tsd-kind-icon">text<wbr>Catalog</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#tilekey" class="tsd-kind-icon">tile<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#typecatalog" class="tsd-kind-icon">type<wbr>Catalog</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#featuregroupfinished" class="tsd-kind-icon">feature<wbr>Group<wbr>Finished</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#featuregroupsize" class="tsd-kind-icon">feature<wbr>Group<wbr>Size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finish" class="tsd-kind-icon">finish</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finishfeaturegroup" class="tsd-kind-icon">finish<wbr>Feature<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finishlinefeaturegroup" class="tsd-kind-icon">finish<wbr>Line<wbr>Feature<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finishpolygonfeaturegroup" class="tsd-kind-icon">finish<wbr>Polygon<wbr>Feature<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#getfeaturename" class="tsd-kind-icon">get<wbr>Feature<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#tileinfofinished" class="tsd-kind-icon">tile<wbr>Info<wbr>Finished</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Tile<wbr>Info<span class="tsd-signature-symbol">(</span>tileKey<span class="tsd-signature-symbol">: </span><a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a>, storeExtendedTags<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html" class="tsd-signature-type">ExtendedTileInfo</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L239">harp-datasource-protocol/lib/TileInfo.ts:239</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tileKey: <a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a></h5>
+								</li>
+								<li>
+									<h5>storeExtendedTags: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html" class="tsd-signature-type">ExtendedTileInfo</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="classcatalog" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> class<wbr>Catalog</h3>
+					<div class="tsd-signature tsd-kind-icon">class<wbr>Catalog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L228">harp-datasource-protocol/lib/TileInfo.ts:228</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Optional catalogs for extended feature infos. Only available if the <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html">ExtendedTileInfo</a> has
+							been constructed with <code>storeExtendedTags</code> == <code>true</code>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="layercatalog" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> layer<wbr>Catalog</h3>
+					<div class="tsd-signature tsd-kind-icon">layer<wbr>Catalog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L222">harp-datasource-protocol/lib/TileInfo.ts:222</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Optional catalogs for extended feature infos. Only available if the <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html">ExtendedTileInfo</a> has
+							been constructed with <code>storeExtendedTags</code> == <code>true</code>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="linegroup" class="tsd-anchor"></a>
+					<h3>line<wbr>Group</h3>
+					<div class="tsd-signature tsd-kind-icon">line<wbr>Group<span class="tsd-signature-symbol">:</span> <a href="_harp_datasource_protocol_lib_tileinfo_.linefeaturegroup.html" class="tsd-signature-type">LineFeatureGroup</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L211">harp-datasource-protocol/lib/TileInfo.ts:211</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Feature group containing all infos about <code>LINESTRING</code> features.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pointgroup" class="tsd-anchor"></a>
+					<h3>point<wbr>Group</h3>
+					<div class="tsd-signature tsd-kind-icon">point<wbr>Group<span class="tsd-signature-symbol">:</span> <a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-signature-type">FeatureGroup</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L206">harp-datasource-protocol/lib/TileInfo.ts:206</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Feature group containing all infos about <code>POINT</code> features.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="polygongroup" class="tsd-anchor"></a>
+					<h3>polygon<wbr>Group</h3>
+					<div class="tsd-signature tsd-kind-icon">polygon<wbr>Group<span class="tsd-signature-symbol">:</span> <a href="_harp_datasource_protocol_lib_tileinfo_.polygonfeaturegroup.html" class="tsd-signature-type">PolygonFeatureGroup</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L216">harp-datasource-protocol/lib/TileInfo.ts:216</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Feature group containing all infos about <code>POLYGON</code> features.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="setuptime" class="tsd-anchor"></a>
+					<h3>setup<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">setup<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html">TileInfo</a>.<a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html#setuptime">setupTime</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L239">harp-datasource-protocol/lib/TileInfo.ts:239</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Used for performance diagnostics.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="techniquecatalog" class="tsd-anchor"></a>
+					<h3>technique<wbr>Catalog</h3>
+					<div class="tsd-signature tsd-kind-icon">technique<wbr>Catalog<span class="tsd-signature-symbol">:</span> <a href="../modules/_harp_datasource_protocol_lib_techniques_.html#technique" class="tsd-signature-type">Technique</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;new Array&lt;Technique&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L201">harp-datasource-protocol/lib/TileInfo.ts:201</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Catalog of techniques. Addressed by every features featureIndex.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="textcatalog" class="tsd-anchor"></a>
+					<h3>text<wbr>Catalog</h3>
+					<div class="tsd-signature tsd-kind-icon">text<wbr>Catalog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;new Array&lt;string&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L197">harp-datasource-protocol/lib/TileInfo.ts:197</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Catalog of strings. Addressed by every features stringIndex.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="tilekey" class="tsd-anchor"></a>
+					<h3>tile<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">tile<wbr>Key<span class="tsd-signature-symbol">:</span> <a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html">TileInfo</a>.<a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html#tilekey">tileKey</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L241">harp-datasource-protocol/lib/TileInfo.ts:241</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="typecatalog" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type<wbr>Catalog</h3>
+					<div class="tsd-signature tsd-kind-icon">type<wbr>Catalog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L234">harp-datasource-protocol/lib/TileInfo.ts:234</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Optional catalogs for extended feature infos. Only available if the <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html">ExtendedTileInfo</a> has
+							been constructed with <code>storeExtendedTags</code> == <code>true</code>.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="featuregroupfinished" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> feature<wbr>Group<wbr>Finished</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">feature<wbr>Group<wbr>Finished<span class="tsd-signature-symbol">(</span>featureGroup<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-signature-type">FeatureGroup</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L308">harp-datasource-protocol/lib/TileInfo.ts:308</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the feature group is finalized.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>featureGroup: <a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-signature-type">FeatureGroup</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="featuregroupsize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> feature<wbr>Group<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">feature<wbr>Group<wbr>Size<span class="tsd-signature-symbol">(</span>featureGroup<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-signature-type">FeatureGroup</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L301">harp-datasource-protocol/lib/TileInfo.ts:301</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the number of features in this feature group.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>featureGroup: <a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-signature-type">FeatureGroup</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="finish" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> finish</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">finish<span class="tsd-signature-symbol">(</span>tileInfo<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html" class="tsd-signature-type">ExtendedTileInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L292">harp-datasource-protocol/lib/TileInfo.ts:292</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finalize the tile&#39;s features groups.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tileInfo: <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html" class="tsd-signature-type">ExtendedTileInfo</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="finishfeaturegroup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> finish<wbr>Feature<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">finish<wbr>Feature<wbr>Group<span class="tsd-signature-symbol">(</span>featureGroup<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-signature-type">FeatureGroup</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L255">harp-datasource-protocol/lib/TileInfo.ts:255</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>featureGroup: <a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-signature-type">FeatureGroup</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="finishlinefeaturegroup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> finish<wbr>Line<wbr>Feature<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">finish<wbr>Line<wbr>Feature<wbr>Group<span class="tsd-signature-symbol">(</span>lineGroup<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.linefeaturegroup.html" class="tsd-signature-type">LineFeatureGroup</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L280">harp-datasource-protocol/lib/TileInfo.ts:280</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineGroup: <a href="_harp_datasource_protocol_lib_tileinfo_.linefeaturegroup.html" class="tsd-signature-type">LineFeatureGroup</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="finishpolygonfeaturegroup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> finish<wbr>Polygon<wbr>Feature<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">finish<wbr>Polygon<wbr>Feature<wbr>Group<span class="tsd-signature-symbol">(</span>polygonGroup<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.polygonfeaturegroup.html" class="tsd-signature-type">PolygonFeatureGroup</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L273">harp-datasource-protocol/lib/TileInfo.ts:273</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>polygonGroup: <a href="_harp_datasource_protocol_lib_tileinfo_.polygonfeaturegroup.html" class="tsd-signature-type">PolygonFeatureGroup</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getfeaturename" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Feature<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Feature<wbr>Name<span class="tsd-signature-symbol">(</span>env<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Env</span>, useAbbreviation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, useIsoCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, languages<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L333">harp-datasource-protocol/lib/TileInfo.ts:333</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determine the text string of the (OMV) feature. It implements the special handling required
+									to determine the text content of a feature from its tags, which are passed in as the <code>env</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>env: <span class="tsd-signature-type">Env</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Environment containing the tags from the (OMV) feature.</p>
+									</div>
+								</li>
+								<li>
+									<h5>useAbbreviation: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>true</code> to use the abbreviation if available.</p>
+									</div>
+								</li>
+								<li>
+									<h5>useIsoCode: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>true</code> to use the tag &quot;iso_code&quot;.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> languages: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>List of languages to use, for example: Specify &quot;en&quot; to use the tag &quot;name_en&quot;
+										as the text of the string. Order reflects priority.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="tileinfofinished" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> tile<wbr>Info<wbr>Finished</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">tile<wbr>Info<wbr>Finished<span class="tsd-signature-symbol">(</span>tileInfo<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html" class="tsd-signature-type">ExtendedTileInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-datasource-protocol/lib/TileInfo.ts#L315">harp-datasource-protocol/lib/TileInfo.ts:315</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if the tileInfo is finalized.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tileInfo: <a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html" class="tsd-signature-type">ExtendedTileInfo</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_harp_datasource_protocol_lib_tileinfo_.html">"harp-<wbr>datasource-<wbr>protocol/lib/<wbr>Tile<wbr>Info"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html" class="tsd-kind-icon">Extended<wbr>Tile<wbr>Info</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#classcatalog" class="tsd-kind-icon">class<wbr>Catalog</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#layercatalog" class="tsd-kind-icon">layer<wbr>Catalog</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#linegroup" class="tsd-kind-icon">line<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#pointgroup" class="tsd-kind-icon">point<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#polygongroup" class="tsd-kind-icon">polygon<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#setuptime" class="tsd-kind-icon">setup<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#techniquecatalog" class="tsd-kind-icon">technique<wbr>Catalog</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#textcatalog" class="tsd-kind-icon">text<wbr>Catalog</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#tilekey" class="tsd-kind-icon">tile<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#typecatalog" class="tsd-kind-icon">type<wbr>Catalog</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#featuregroupfinished" class="tsd-kind-icon">feature<wbr>Group<wbr>Finished</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#featuregroupsize" class="tsd-kind-icon">feature<wbr>Group<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finish" class="tsd-kind-icon">finish</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finishfeaturegroup" class="tsd-kind-icon">finish<wbr>Feature<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finishlinefeaturegroup" class="tsd-kind-icon">finish<wbr>Line<wbr>Feature<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#finishpolygonfeaturegroup" class="tsd-kind-icon">finish<wbr>Polygon<wbr>Feature<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#getfeaturename" class="tsd-kind-icon">get<wbr>Feature<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfo.html#tileinfofinished" class="tsd-kind-icon">tile<wbr>Info<wbr>Finished</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfovisitor.html" class="tsd-kind-icon">Extended<wbr>Tile<wbr>Info<wbr>Visitor</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_datasource_protocol_lib_tileinfo_.extendedtileinfowriter.html" class="tsd-kind-icon">Extended<wbr>Tile<wbr>Info<wbr>Writer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_datasource_protocol_lib_tileinfo_.featuregroup.html" class="tsd-kind-icon">Feature<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_datasource_protocol_lib_tileinfo_.linefeaturegroup.html" class="tsd-kind-icon">Line<wbr>Feature<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_datasource_protocol_lib_tileinfo_.polygonfeaturegroup.html" class="tsd-kind-icon">Polygon<wbr>Feature<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.extendedtileinfohandler.html" class="tsd-kind-icon">Extended<wbr>Tile<wbr>Info<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.extendedtileinfopolygonaccessor.html" class="tsd-kind-icon">Extended<wbr>Tile<wbr>Info<wbr>Polygon<wbr>Accessor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html" class="tsd-kind-icon">Tile<wbr>Info</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

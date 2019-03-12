@@ -1,0 +1,355 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>APIFormat | harp.gl</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">harp.gl</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html">&quot;harp-omv-datasource/lib/OmvRestClient&quot;</a>
+				</li>
+				<li>
+					<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html">APIFormat</a>
+				</li>
+			</ul>
+			<h1>Enumeration APIFormat</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumeration members</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#herev1" class="tsd-kind-icon">Here<wbr>V1</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#mapboxv4" class="tsd-kind-icon">Mapbox<wbr>V4</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#tomtomv1" class="tsd-kind-icon">Tomtom<wbr>V1</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#xyzjson" class="tsd-kind-icon">XYZJson</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#xyzmvt" class="tsd-kind-icon">XYZMVT</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#xyzomv" class="tsd-kind-icon">XYZOMV</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="herev1" class="tsd-anchor"></a>
+					<h3>Here<wbr>V1</h3>
+					<div class="tsd-signature tsd-kind-icon">Here<wbr>V1<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-omv-datasource/lib/OmvRestClient.ts#L33">harp-omv-datasource/lib/OmvRestClient.ts:33</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use the REST API format of HERE Vector Tiles Server component version 1.</p>
+						</div>
+						<p>Usage:</p>
+						<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">OmvRestClientParams.baseUrl</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">zoom</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">X</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-name">Y</span>&gt;</span>/omv</code></pre><p>If [[OmvRestClientParams.authenticationToken]] is provided, it will be added as HTTP header:</p>
+						<pre><code>Authorization: Bearer <span class="hljs-symbol">$aut</span>henticationToken</code></pre><p>Format definition:
+						<code>//http|s://&lt;base-url&gt;/{API version}/{layers}/{projection}/{z}/{x}/{y}/{format}</code></p>
+						<p>Default authentication method used: <a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypebearer">AuthenticationTypeBearer</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="mapboxv4" class="tsd-anchor"></a>
+					<h3>Mapbox<wbr>V4</h3>
+					<div class="tsd-signature tsd-kind-icon">Mapbox<wbr>V4<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-omv-datasource/lib/OmvRestClient.ts#L49">harp-omv-datasource/lib/OmvRestClient.ts:49</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use the REST API format of Mapbox Vector Tile API v4.</p>
+						</div>
+						<p>Usage:
+						<code>&lt;OmvRestClientParams.baseUrl&gt;/&lt;zoom&gt;/&lt;X&gt;/&lt;Y&gt;.mvt?access_token=&lt;OmvRestClientParams.authenticationCode&gt;</code></p>
+						<p>Format definition:
+						<code>http|s://&lt;base-url&gt;/v4/{map_id}/{z}/{x}/{y}{@2x}.{format}?[style]&amp;access_token={access_token}</code></p>
+						<p>Sample URL:
+						<code>http://a.tiles.mapbox.com/v4/mapbox.mapbox-streets-v7/14/4823/6160.mvt?access_token=your-mapbox-access-token</code></p>
+						<p>Default authentication method used: <a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypeaccesstoken">AuthenticationTypeAccessToken</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="tomtomv1" class="tsd-anchor"></a>
+					<h3>Tomtom<wbr>V1</h3>
+					<div class="tsd-signature tsd-kind-icon">Tomtom<wbr>V1<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-omv-datasource/lib/OmvRestClient.ts#L113">harp-omv-datasource/lib/OmvRestClient.ts:113</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use the REST API format of Tomtoms Vector Tile API v1.</p>
+						</div>
+						<p>Usage:
+						<code>&lt;OmvRestClientParams.baseUrl&gt;/&lt;zoom&gt;/&lt;X&gt;/&lt;Y&gt;.pbf?key=&lt;OmvRestClientParams.authenticationCode&gt;</code></p>
+						<p>Format definition:
+						<code>&lt;http|https&gt;://&lt;baseURL&gt;/map/&lt;versionNumber&gt;/tile/&lt;layer&gt;/&lt;style&gt;/&lt;zoom&gt;/&lt;X&gt;/&lt;Y&gt;.&lt;format&gt;?key=&lt;apiKey&gt;[&amp;view=&lt;view&gt;][&amp;language=&lt;language&gt;]</code></p>
+						<p>Sample URL:
+						<code>http://api.tomtom.com/map/1/tile/basic/main/0/0/0.pbf?key=&lt;apiKey&gt;</code></p>
+						<p>Default authentication method used: <a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypetomtomv1">AuthenticationTypeTomTomV1</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="xyzjson" class="tsd-anchor"></a>
+					<h3>XYZJson</h3>
+					<div class="tsd-signature tsd-kind-icon">XYZJson<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-omv-datasource/lib/OmvRestClient.ts#L81">harp-omv-datasource/lib/OmvRestClient.ts:81</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use the REST API format of XYZ Vector Tile API in JSON format.</p>
+						</div>
+						<p>Usage:
+						<code>&lt;OmvRestClientParams.baseUrl&gt;/tiles/omsbase/256/&lt;zoom&gt;/&lt;X&gt;/&lt;Y&gt;.mvt?access_token=&lt;OmvRestClientParams.authenticationCode&gt;</code></p>
+						<p>Format definition:
+						<code>http|s://&lt;base-url&gt;/tiles/{layers}/{z}/{x}/{y}/{format}?access_token={access_token}</code></p>
+						<p>Sample URL:
+						<code>https://xyz.api.here.com/tiles/osmbase/256/all/16/19293/24641.json?access_token=your-xyz-api-key</code></p>
+						<p>Default authentication method used: <a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypeaccesstoken">AuthenticationTypeAccessToken</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="xyzmvt" class="tsd-anchor"></a>
+					<h3>XYZMVT</h3>
+					<div class="tsd-signature tsd-kind-icon">XYZMVT<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-omv-datasource/lib/OmvRestClient.ts#L65">harp-omv-datasource/lib/OmvRestClient.ts:65</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use the REST API format of XYZ Vector Tile API in MVT format.</p>
+						</div>
+						<p>Usage:
+						<code>&lt;OmvRestClientParams.baseUrl&gt;/tiles/omsbase/256/&lt;zoom&gt;/&lt;X&gt;/&lt;Y&gt;.mvt?access_token=&lt;OmvRestClientParams.authenticationCode&gt;</code></p>
+						<p>Format definition:
+						<code>http|s://&lt;base-url&gt;/tiles/{layers}/{z}/{x}/{y}/{format}?access_token={access_token}</code></p>
+						<p>Sample URL:
+						<code>https://xyz.api.here.com/tiles/osmbase/256/all/16/19293/24641.mvt?access_token=your-xyz-access-token</code></p>
+						<p>Default authentication method used: <a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypeaccesstoken">AuthenticationTypeAccessToken</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="xyzomv" class="tsd-anchor"></a>
+					<h3>XYZOMV</h3>
+					<div class="tsd-signature tsd-kind-icon">XYZOMV<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-omv-datasource/lib/OmvRestClient.ts#L97">harp-omv-datasource/lib/OmvRestClient.ts:97</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Use the REST API format of XYZ Vector Tile API in OMV format.</p>
+						</div>
+						<p>Usage:
+						<code>&lt;OmvRestClientParams.baseUrl&gt;/tiles/herebase.02/&lt;zoom&gt;/&lt;X&gt;/&lt;Y&gt;/omv?access_token=&lt;OmvRestClientParams.authenticationCode&gt;</code></p>
+						<p>Format definition:
+						<code>http|s://&lt;base-url&gt;/tiles/herebase.02/{z}/{x}/{y}/{format}?access_token={access_token}</code></p>
+						<p>Sample URL:
+						<code>https://xyz.api.here.com/tiles/herebase.02/14/2649/6338/omv?access_token=your-xyz-access-token</code></p>
+						<p>Default authentication method used: <a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypeaccesstoken">AuthenticationTypeAccessToken</a>.</p>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html">"harp-<wbr>omv-<wbr>datasource/lib/<wbr>Omv<wbr>Rest<wbr>Client"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html" class="tsd-kind-icon">APIFormat</a>
+						<ul>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#herev1" class="tsd-kind-icon">Here<wbr>V1</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#mapboxv4" class="tsd-kind-icon">Mapbox<wbr>V4</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#tomtomv1" class="tsd-kind-icon">Tomtom<wbr>V1</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#xyzjson" class="tsd-kind-icon">XYZJson</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#xyzmvt" class="tsd-kind-icon">XYZMVT</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_harp_omv_datasource_lib_omvrestclient_.apiformat.html#xyzomv" class="tsd-kind-icon">XYZOMV</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_harp_omv_datasource_lib_omvrestclient_.authenticationmethod.html" class="tsd-kind-icon">Authentication<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_harp_omv_datasource_lib_omvrestclient_.omvrestclient.html" class="tsd-kind-icon">Omv<wbr>Rest<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_harp_omv_datasource_lib_omvrestclient_.authenticationmethodinfo.html" class="tsd-kind-icon">Authentication<wbr>Method<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_harp_omv_datasource_lib_omvrestclient_.omvrestclientparameters.html" class="tsd-kind-icon">Omv<wbr>Rest<wbr>Client<wbr>Parameters</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationcodeprovider" class="tsd-kind-icon">Authentication<wbr>Code<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypeaccesstoken" class="tsd-kind-icon">Authentication<wbr>Type<wbr>Access<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypebearer" class="tsd-kind-icon">Authentication<wbr>Type<wbr>Bearer</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/_harp_omv_datasource_lib_omvrestclient_.html#authenticationtypetomtomv1" class="tsd-kind-icon">Authentication<wbr>Type<wbr>Tom<wbr>Tom<wbr>V1</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -1,0 +1,588 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MapRenderingManager | harp.gl</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">harp.gl</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_harp_mapview_lib_composing_maprenderingmanager_.html">&quot;harp-mapview/lib/composing/MapRenderingManager&quot;</a>
+				</li>
+				<li>
+					<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html">MapRenderingManager</a>
+				</li>
+			</ul>
+			<h1>Class MapRenderingManager</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The implementation of <a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imaprenderingmanager.html">IMapRenderingManager</a> to instantiate in <a href="_harp_mapview_lib_mapview_.mapview.html">MapView</a> and manage the map
+						rendering.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">MapRenderingManager</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imaprenderingmanager.html" class="tsd-signature-type">IMapRenderingManager</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#dynamicmsaasamplinglevel" class="tsd-kind-icon">dynamic<wbr>Msaa<wbr>Sampling<wbr>Level</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#lowrespixelratio" class="tsd-kind-icon">low<wbr>Res<wbr>Pixel<wbr>Ratio</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#msaaenabled" class="tsd-kind-icon">msaa<wbr>Enabled</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#staticmsaasamplinglevel" class="tsd-kind-icon">static<wbr>Msaa<wbr>Sampling<wbr>Level</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#render" class="tsd-kind-icon">render</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#setsize" class="tsd-kind-icon">set<wbr>Size</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Map<wbr>Rendering<wbr>Manager<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, lowResPixelRatio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, antialiasSettings<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imapantialiassettings.html" class="tsd-signature-type">IMapAntialiasSettings</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html" class="tsd-signature-type">MapRenderingManager</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L107">harp-mapview/lib/composing/MapRenderingManager.ts:107</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The constructor of <code>MapRenderingManager</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Width of the frame buffer.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Height of the frame buffer.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>lowResPixelRatio: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The <code>pixelRatio</code> determines the resolution of the internal
+												<code>WebGLRenderTarget</code>. Values between 0.5 and <code>window.devicePixelRatio</code> can be tried to give
+												good results. A value of <code>undefined</code> disables the low res render pass. The value should not
+											be larger than<code>window.devicePixelRatio</code>.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> antialiasSettings: <a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imapantialiassettings.html" class="tsd-signature-type">IMapAntialiasSettings</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;{ msaaEnabled: false }</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html" class="tsd-signature-type">MapRenderingManager</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="dynamicmsaasamplinglevel" class="tsd-anchor"></a>
+					<h3>dynamic<wbr>Msaa<wbr>Sampling<wbr>Level</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> dynamicMsaaSamplingLevel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> dynamicMsaaSamplingLevel<span class="tsd-signature-symbol">(</span>samplingLevel<span class="tsd-signature-symbol">: </span><a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L234">harp-mapview/lib/composing/MapRenderingManager.ts:234</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the sampling level defined during continuous rendering.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L227">harp-mapview/lib/composing/MapRenderingManager.ts:227</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the level of sampling while the user interacts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>samplingLevel: <a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The sampling level.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="lowrespixelratio" class="tsd-anchor"></a>
+					<h3>low<wbr>Res<wbr>Pixel<wbr>Ratio</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> lowResPixelRatio<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> lowResPixelRatio<span class="tsd-signature-symbol">(</span>pixelRatio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L213">harp-mapview/lib/composing/MapRenderingManager.ts:213</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The <code>lowResPixelRatio</code> determines the resolution of the internal <code>WebGLRenderTarget</code>. Values
+										between 0.5 and <code>window.devicePixelRatio</code> can be tried to give  good results. A value of
+										<code>undefined</code> disables the low res render pass. The value should not be larger than
+									<code>window.devicePixelRatio</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L217">harp-mapview/lib/composing/MapRenderingManager.ts:217</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The <code>lowResPixelRatio</code> determines the resolution of the internal <code>WebGLRenderTarget</code>. Values
+										between 0.5 and <code>window.devicePixelRatio</code> can be tried to give  good results. A value of
+										<code>undefined</code> disables the low res render pass. The value should not be larger than
+									<code>window.devicePixelRatio</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pixelRatio: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="msaaenabled" class="tsd-anchor"></a>
+					<h3>msaa<wbr>Enabled</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> msaaEnabled<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> msaaEnabled<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L251">harp-mapview/lib/composing/MapRenderingManager.ts:251</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return whether the MSAA is enabled.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L244">harp-mapview/lib/composing/MapRenderingManager.ts:244</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Enable or disable the MSAA. If disabled, <code>MapRenderingManager</code> will use the renderer provided
+									in the <a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#render">MapRenderingManager.render</a> method to render the scene.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>If <code>true</code>, MSAA is enabled, disabled otherwise.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="staticmsaasamplinglevel" class="tsd-anchor"></a>
+					<h3>static<wbr>Msaa<wbr>Sampling<wbr>Level</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> staticMsaaSamplingLevel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> staticMsaaSamplingLevel<span class="tsd-signature-symbol">(</span>samplingLevel<span class="tsd-signature-symbol">: </span><a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L268">harp-mapview/lib/composing/MapRenderingManager.ts:268</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the sampling level defined for rendering static frames.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L260">harp-mapview/lib/composing/MapRenderingManager.ts:260</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the sampling level for rendering static frames.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>samplingLevel: <a href="../enums/_harp_mapview_lib_composing_msaarenderpass_.msaasampling.html" class="tsd-signature-type">MSAASampling</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The sampling level.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="render" class="tsd-anchor"></a>
+					<h3>render</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.WebGLRenderer</span>, scene<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Scene</span>, camera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.PerspectiveCamera</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">THREE.OrthographicCamera</span>, isStaticFrame<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L152">harp-mapview/lib/composing/MapRenderingManager.ts:152</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The method to call to render the map with the <code>MapRenderingManager</code> instance. It contains the
+										chain of sub-passes that can transfer the write and read buffers, and other sheer rendering
+									conditions as disabling AA when a high DPI device is in use.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>renderer: <span class="tsd-signature-type">THREE.WebGLRenderer</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ThreeJS WebGLRenderer instance to render the map with.</p>
+									</div>
+								</li>
+								<li>
+									<h5>scene: <span class="tsd-signature-type">THREE.Scene</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ThreeJS Scene instance containing the map objects to render.</p>
+									</div>
+								</li>
+								<li>
+									<h5>camera: <span class="tsd-signature-type">THREE.PerspectiveCamera</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">THREE.OrthographicCamera</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ThreeJS Camera instance to render the scene through.</p>
+									</div>
+								</li>
+								<li>
+									<h5>isStaticFrame: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Whether the frame to render is static or dynamic. Selects level of
+										antialiasing.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setsize" class="tsd-anchor"></a>
+					<h3>set<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Size<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imaprenderingmanager.html">IMapRenderingManager</a>.<a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imaprenderingmanager.html#setsize">setSize</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/composing/MapRenderingManager.ts#L201">harp-mapview/lib/composing/MapRenderingManager.ts:201</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The resize function to call on resize events to resize the render targets. It shall include
+									the resize methods of all the sub-passes used in <code>MapRenderingManager</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>New width to use.</p>
+									</div>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>New height to use.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_harp_mapview_lib_composing_maprenderingmanager_.html">"harp-<wbr>mapview/lib/composing/<wbr>Map<wbr>Rendering<wbr>Manager"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html" class="tsd-kind-icon">Map<wbr>Rendering<wbr>Manager</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#dynamicmsaasamplinglevel" class="tsd-kind-icon">dynamic<wbr>Msaa<wbr>Sampling<wbr>Level</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#lowrespixelratio" class="tsd-kind-icon">low<wbr>Res<wbr>Pixel<wbr>Ratio</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#msaaenabled" class="tsd-kind-icon">msaa<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#staticmsaasamplinglevel" class="tsd-kind-icon">static<wbr>Msaa<wbr>Sampling<wbr>Level</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#render" class="tsd-kind-icon">render</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_composing_maprenderingmanager_.maprenderingmanager.html#setsize" class="tsd-kind-icon">set<wbr>Size</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imapantialiassettings.html" class="tsd-kind-icon">IMap<wbr>Antialias<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_harp_mapview_lib_composing_maprenderingmanager_.imaprenderingmanager.html" class="tsd-kind-icon">IMap<wbr>Rendering<wbr>Manager</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SkyBackground | harp.gl</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">harp.gl</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_harp_mapview_lib_skybackground_.html">&quot;harp-mapview/lib/SkyBackground&quot;</a>
+				</li>
+				<li>
+					<a href="_harp_mapview_lib_skybackground_.skybackground.html">SkyBackground</a>
+				</li>
+			</ul>
+			<h1>Class SkyBackground</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Generates a texture gradient and allows updates to its y-offset.</p>
+					</div>
+					<p>To position the texture correctly, this class reads the value of the four corners of the far
+						clipping plane and calculates the intersection between the line that divides the far clipping
+						plane in to two equal parts, and the ground plane. This intersection point is called
+					<code>horizonPosition</code>, and it determines the texture&#39;s y-offset.</p>
+					<p>See also <a href="_harp_mapview_lib_skygradienttexture_.skygradienttexture.html">SkyGradientTexture</a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">SkyBackground</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#bottomcolor" class="tsd-kind-icon">bottom<wbr>Color</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#groundcolor" class="tsd-kind-icon">ground<wbr>Color</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#horizon" class="tsd-kind-icon">horizon</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#monomialpower" class="tsd-kind-icon">monomial<wbr>Power</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#texture" class="tsd-kind-icon">texture</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#topcolor" class="tsd-kind-icon">top<wbr>Color</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_lib_skybackground_.skybackground.html#updatecolors" class="tsd-kind-icon">update<wbr>Colors</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Sky<wbr>Background<span class="tsd-signature-symbol">(</span>m_topColor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span>, m_bottomColor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span>, m_groundColor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span>, camera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Camera</span>, m_monomialPower<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_harp_mapview_lib_skybackground_.skybackground.html" class="tsd-signature-type">SkyBackground</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L27">harp-mapview/lib/SkyBackground.ts:27</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs a <code>SkyBackground</code> instance.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-TypeScript"><span class="hljs-comment">// This creates a texture gradient and uses it as background of the scene.</span>
+<span class="hljs-keyword">this</span>.m_skyBackground = <span class="hljs-keyword">new</span> SkyBackground(
+    <span class="hljs-keyword">new</span> THREE.Color(<span class="hljs-string">"#FF000"</span>),
+    <span class="hljs-keyword">new</span> THREE.Color(<span class="hljs-string">"#0000FF"</span>),
+    <span class="hljs-keyword">new</span> THREE.Color(<span class="hljs-string">"#F8FBFD"</span>),
+    <span class="hljs-keyword">this</span>.camera
+);
+<span class="hljs-keyword">this</span>.m_scene.background = <span class="hljs-keyword">this</span>.m_skyBackground.texture;
+
+<span class="hljs-comment">// Then, when the camera moves at runtime, the skyBackground needs to be updated.</span>
+<span class="hljs-keyword">this</span>.m_skyBackground.update(<span class="hljs-keyword">this</span>.m_camera);</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>m_topColor: <span class="tsd-signature-type">THREE.Color</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Defines the color of the upper part of the gradient.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>m_bottomColor: <span class="tsd-signature-type">THREE.Color</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Defines the color of bottom part of the gradient, that touches the
+											ground.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>m_groundColor: <span class="tsd-signature-type">THREE.Color</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Defines the color of the first pixel of the gradient, from the bottom.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>camera: <span class="tsd-signature-type">THREE.Camera</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Required to calculate the texture&#39;s offset.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m_monomialPower: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;DEFAULT_MONOMIAL_POWER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Defines the texture&#39;s gradient power.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_harp_mapview_lib_skybackground_.skybackground.html" class="tsd-signature-type">SkyBackground</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="bottomcolor" class="tsd-anchor"></a>
+					<h3>bottom<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> bottomColor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L92">harp-mapview/lib/SkyBackground.ts:92</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Missing Typedoc</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">THREE.Color</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="groundcolor" class="tsd-anchor"></a>
+					<h3>ground<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> groundColor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L99">harp-mapview/lib/SkyBackground.ts:99</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Missing Typedoc</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">THREE.Color</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="horizon" class="tsd-anchor"></a>
+					<h3>horizon</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> horizon<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Vector3</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L120">harp-mapview/lib/SkyBackground.ts:120</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Missing Typedoc</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">THREE.Vector3</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="monomialpower" class="tsd-anchor"></a>
+					<h3>monomial<wbr>Power</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> monomialPower<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L106">harp-mapview/lib/SkyBackground.ts:106</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Missing Typedoc</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="texture" class="tsd-anchor"></a>
+					<h3>texture</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> texture<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.DataTexture</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L113">harp-mapview/lib/SkyBackground.ts:113</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Missing Typedoc</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">THREE.DataTexture</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="topcolor" class="tsd-anchor"></a>
+					<h3>top<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> topColor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L85">harp-mapview/lib/SkyBackground.ts:85</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Missing Typedoc</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">THREE.Color</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>camera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Camera</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L129">harp-mapview/lib/SkyBackground.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method updates the position of the texture depending on the camera frustum.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>camera: <span class="tsd-signature-type">THREE.Camera</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The camera used in the map view.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updatecolors" class="tsd-anchor"></a>
+					<h3>update<wbr>Colors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Colors<span class="tsd-signature-symbol">(</span>topColor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span>, bottomColor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span>, groundColor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">THREE.Color</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/SkyBackground.ts#L141">harp-mapview/lib/SkyBackground.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the sky texture with new colors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>topColor: <span class="tsd-signature-type">THREE.Color</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Color at the zenith.</p>
+									</div>
+								</li>
+								<li>
+									<h5>bottomColor: <span class="tsd-signature-type">THREE.Color</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Color at the horizon.</p>
+									</div>
+								</li>
+								<li>
+									<h5>groundColor: <span class="tsd-signature-type">THREE.Color</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>This color should match the renderer&#39;s clear color in the theme.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_harp_mapview_lib_skybackground_.html">"harp-<wbr>mapview/lib/<wbr>Sky<wbr>Background"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_mapview_lib_skybackground_.skybackground.html" class="tsd-kind-icon">Sky<wbr>Background</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#bottomcolor" class="tsd-kind-icon">bottom<wbr>Color</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#groundcolor" class="tsd-kind-icon">ground<wbr>Color</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#horizon" class="tsd-kind-icon">horizon</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#monomialpower" class="tsd-kind-icon">monomial<wbr>Power</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#texture" class="tsd-kind-icon">texture</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#topcolor" class="tsd-kind-icon">top<wbr>Color</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_lib_skybackground_.skybackground.html#updatecolors" class="tsd-kind-icon">update<wbr>Colors</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

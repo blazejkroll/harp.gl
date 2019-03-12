@@ -1,0 +1,389 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>&quot;harp-mapview/lib/poi/PixelPicker&quot; | harp.gl</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">harp.gl</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_harp_mapview_lib_poi_pixelpicker_.html">&quot;harp-mapview/lib/poi/PixelPicker&quot;</a>
+				</li>
+			</ul>
+			<h1>External module &quot;harp-mapview/lib/poi/PixelPicker&quot;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_harp_mapview_lib_poi_pixelpicker_.html#getpixelfromimage" class="tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_harp_mapview_lib_poi_pixelpicker_.html#getpixelfromimagebitmap" class="tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image<wbr>Bitmap</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_harp_mapview_lib_poi_pixelpicker_.html#getpixelfromimagedata" class="tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image<wbr>Data</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_harp_mapview_lib_poi_pixelpicker_.html#screentouvcoordinates" class="tsd-kind-icon">screen<wbr>ToUv<wbr>Coordinates</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getpixelfromimage" class="tsd-anchor"></a>
+					<h3>get<wbr>Pixel<wbr>From<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image<span class="tsd-signature-symbol">(</span>xPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, imageData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ImageData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ImageBitmap</span>, canvas<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLCanvasElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/poi/PixelPicker.ts#L18">harp-mapview/lib/poi/PixelPicker.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>It returns an array containing the channel colors for the pixel at the given coordinates.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xPos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X value of the pixel.</p>
+									</div>
+								</li>
+								<li>
+									<h5>yPos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y value of the pixel.</p>
+									</div>
+								</li>
+								<li>
+									<h5>imageData: <span class="tsd-signature-type">ImageData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ImageBitmap</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Data containing the pixels.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> canvas: <span class="tsd-signature-type">HTMLCanvasElement</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Canvas element that will be used to draw the image, in case the imageData is an
+										ImageBitmap</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8ClampedArray</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getpixelfromimagebitmap" class="tsd-anchor"></a>
+					<h3>get<wbr>Pixel<wbr>From<wbr>Image<wbr>Bitmap</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image<wbr>Bitmap<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ImageBitmap</span>, xPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, canvas<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLCanvasElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/poi/PixelPicker.ts#L76">harp-mapview/lib/poi/PixelPicker.ts:76</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>It returns an Uint8ClampedArray containing the color channel values for the given pixel
+									coordinates. It returns undefined if the given coordinates are out of range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <span class="tsd-signature-type">ImageBitmap</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Bitmap image in which the pixels are stored.</p>
+									</div>
+								</li>
+								<li>
+									<h5>xPos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X value of the pixel.</p>
+									</div>
+								</li>
+								<li>
+									<h5>yPos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y value of the pixel.</p>
+									</div>
+								</li>
+								<li>
+									<h5>canvas: <span class="tsd-signature-type">HTMLCanvasElement</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>HTML Canvas element on which the image is drawn.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8ClampedArray</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getpixelfromimagedata" class="tsd-anchor"></a>
+					<h3>get<wbr>Pixel<wbr>From<wbr>Image<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image<wbr>Data<span class="tsd-signature-symbol">(</span>imgData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ImageData</span>, xPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, stride<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/poi/PixelPicker.ts#L118">harp-mapview/lib/poi/PixelPicker.ts:118</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>It returns an Uint8ClampedArray containing the color channel values for the given pixel
+									coordinates. It returns undefined if the given coordinates are out of range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>imgData: <span class="tsd-signature-type">ImageData</span></h5>
+								</li>
+								<li>
+									<h5>xPos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X value of the pixel.</p>
+									</div>
+								</li>
+								<li>
+									<h5>yPos: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y value of the pixel.</p>
+									</div>
+								</li>
+								<li>
+									<h5>stride: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The stride value of the image data.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8ClampedArray</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="screentouvcoordinates" class="tsd-anchor"></a>
+					<h3>screen<wbr>ToUv<wbr>Coordinates</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">screen<wbr>ToUv<wbr>Coordinates<span class="tsd-signature-symbol">(</span>screenX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, screenY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, box<span class="tsd-signature-symbol">: </span><a href="../classes/_harp_utils_lib_math2d_.math2d.box.html" class="tsd-signature-type">Box</a>, uvBox<span class="tsd-signature-symbol">: </span><a href="../interfaces/_harp_utils_lib_math2d_.math2d.uvbox.html" class="tsd-signature-type">UvBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview/lib/poi/PixelPicker.ts#L51">harp-mapview/lib/poi/PixelPicker.ts:51</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given the x and y position in screen coordinates inside the target box, it map them to the UV
+									coordinates.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>screenX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>X value in screen coordinates.</p>
+									</div>
+								</li>
+								<li>
+									<h5>screenY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Y value in screen coordinates.</p>
+									</div>
+								</li>
+								<li>
+									<h5>box: <a href="../classes/_harp_utils_lib_math2d_.math2d.box.html" class="tsd-signature-type">Box</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Bounding box in screen coordinates.</p>
+									</div>
+								</li>
+								<li>
+									<h5>uvBox: <a href="../interfaces/_harp_utils_lib_math2d_.math2d.uvbox.html" class="tsd-signature-type">UvBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Uv box referred to the given bounding box.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<ul class="tsd-parameters">
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="_harp_mapview_lib_poi_pixelpicker_.html">"harp-<wbr>mapview/lib/poi/<wbr>Pixel<wbr>Picker"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_harp_mapview_lib_poi_pixelpicker_.html#getpixelfromimage" class="tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_harp_mapview_lib_poi_pixelpicker_.html#getpixelfromimagebitmap" class="tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image<wbr>Bitmap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_harp_mapview_lib_poi_pixelpicker_.html#getpixelfromimagedata" class="tsd-kind-icon">get<wbr>Pixel<wbr>From<wbr>Image<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_harp_mapview_lib_poi_pixelpicker_.html#screentouvcoordinates" class="tsd-kind-icon">screen<wbr>ToUv<wbr>Coordinates</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

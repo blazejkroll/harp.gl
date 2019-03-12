@@ -1,0 +1,453 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ThemedTileDecoder | harp.gl</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">harp.gl</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_harp_mapview_decoder_lib_themedtiledecoder_.html">&quot;harp-mapview-decoder/lib/ThemedTileDecoder&quot;</a>
+				</li>
+				<li>
+					<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html">ThemedTileDecoder</a>
+				</li>
+			</ul>
+			<h1>Class ThemedTileDecoder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p><code>ThemedTileDecoder</code> implements an <a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html">ITileDecoder</a> which uses a <a href="../interfaces/_harp_datasource_protocol_lib_theme_.theme.html">Theme</a> to apply styles to the
+						objects displayed in the map.</p>
+					</div>
+					<p>By default, decoders are executed in web workers (using <a href="_harp_mapview_decoder_lib_tiledecoderservice_.tiledecoderservice.html">TileDecoderService</a>) for performance
+					reasons.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ThemedTileDecoder</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_harp_omv_datasource_lib_omvdecoder_.omvtiledecoder.html" class="tsd-signature-type">OmvTileDecoder</a>
+							</li>
+							<li>
+								<a href="_harp_geojson_datasource_lib_geojsondecoder_.geojsontiledecoder.html" class="tsd-signature-type">GeoJsonTileDecoder</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html" class="tsd-signature-type">ITileDecoder</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#languages" class="tsd-kind-icon">languages</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#m_stylesetevaluator" class="tsd-kind-icon">m_<wbr>style<wbr>Set<wbr>Evaluator</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#configure" class="tsd-kind-icon">configure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#decodethemedtile" class="tsd-kind-icon">decode<wbr>Themed<wbr>Tile</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#decodetile" class="tsd-kind-icon">decode<wbr>Tile</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#gettileinfo" class="tsd-kind-icon">get<wbr>Tile<wbr>Info</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="languages" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> languages</h3>
+					<div class="tsd-signature tsd-kind-icon">languages<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L25">harp-mapview-decoder/lib/ThemedTileDecoder.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="m_stylesetevaluator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> m_<wbr>style<wbr>Set<wbr>Evaluator</h3>
+					<div class="tsd-signature tsd-kind-icon">m_<wbr>style<wbr>Set<wbr>Evaluator<span class="tsd-signature-symbol">:</span> <a href="_harp_datasource_protocol_lib_theme_.stylesetevaluator.html" class="tsd-signature-type">StyleSetEvaluator</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L26">harp-mapview-decoder/lib/ThemedTileDecoder.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="configure" class="tsd-anchor"></a>
+					<h3>configure</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>styleSet<span class="tsd-signature-symbol">?: </span><a href="../modules/_harp_datasource_protocol_lib_theme_.html#styleset" class="tsd-signature-type">StyleSet</a>, languages<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_harp_datasource_protocol_lib_workerdecoderprotocol_.optionsmap.html" class="tsd-signature-type">OptionsMap</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html">ITileDecoder</a>.<a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html#configure">configure</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L63">harp-mapview-decoder/lib/ThemedTileDecoder.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> styleSet: <a href="../modules/_harp_datasource_protocol_lib_theme_.html#styleset" class="tsd-signature-type">StyleSet</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> languages: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_harp_datasource_protocol_lib_workerdecoderprotocol_.optionsmap.html" class="tsd-signature-type">OptionsMap</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="connect" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> connect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html">ITileDecoder</a>.<a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html#connect">connect</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L27">harp-mapview-decoder/lib/ThemedTileDecoder.ts:27</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="decodethemedtile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> decode<wbr>Themed<wbr>Tile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Themed<wbr>Tile<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayBufferLike</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__type</span>, tileKey<span class="tsd-signature-symbol">: </span><a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a>, styleSetEvaluator<span class="tsd-signature-symbol">: </span><a href="_harp_datasource_protocol_lib_theme_.stylesetevaluator.html" class="tsd-signature-type">StyleSetEvaluator</a>, projection<span class="tsd-signature-symbol">: </span><a href="../interfaces/_harp_geoutils_lib_projection_projection_.projection.html" class="tsd-signature-type">Projection</a>, displayZoomLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_harp_datasource_protocol_lib_decodedtile_.decodedtile.html" class="tsd-signature-type">DecodedTile</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L82">harp-mapview-decoder/lib/ThemedTileDecoder.ts:82</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a <a href="../interfaces/_harp_datasource_protocol_lib_decodedtile_.decodedtile.html">DecodedTile</a> from binary tile data and a theme description in form of a
+									<a href="_harp_datasource_protocol_lib_theme_.stylesetevaluator.html">StyleSetEvaluator</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">ArrayBufferLike</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__type</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Binary data in form of [[ArrayBufferLike]], or any object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>tileKey: <a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Quadtree address of tile.</p>
+									</div>
+								</li>
+								<li>
+									<h5>styleSetEvaluator: <a href="_harp_datasource_protocol_lib_theme_.stylesetevaluator.html" class="tsd-signature-type">StyleSetEvaluator</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Processor of <a href="../interfaces/_harp_datasource_protocol_lib_theme_.theme.html">Theme</a>, identifies styling techniques applicable to
+										individual objects.</p>
+									</div>
+								</li>
+								<li>
+									<h5>projection: <a href="../interfaces/_harp_geoutils_lib_projection_projection_.projection.html" class="tsd-signature-type">Projection</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Projection used by the individual data sources.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> displayZoomLevel: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_harp_datasource_protocol_lib_decodedtile_.decodedtile.html" class="tsd-signature-type">DecodedTile</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="decodetile" class="tsd-anchor"></a>
+					<h3>decode<wbr>Tile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Tile<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayBufferLike</span>, tileKey<span class="tsd-signature-symbol">: </span><a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a>, projection<span class="tsd-signature-symbol">: </span><a href="../interfaces/_harp_geoutils_lib_projection_projection_.projection.html" class="tsd-signature-type">Projection</a>, displayZoomLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_harp_datasource_protocol_lib_decodedtile_.decodedtile.html" class="tsd-signature-type">DecodedTile</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L33">harp-mapview-decoder/lib/ThemedTileDecoder.ts:33</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">ArrayBufferLike</span></h5>
+								</li>
+								<li>
+									<h5>tileKey: <a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a></h5>
+								</li>
+								<li>
+									<h5>projection: <a href="../interfaces/_harp_geoutils_lib_projection_projection_.projection.html" class="tsd-signature-type">Projection</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> displayZoomLevel: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_harp_datasource_protocol_lib_decodedtile_.decodedtile.html" class="tsd-signature-type">DecodedTile</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html">ITileDecoder</a>.<a href="../interfaces/_harp_datasource_protocol_lib_itiledecoder_.itiledecoder.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L29">harp-mapview-decoder/lib/ThemedTileDecoder.ts:29</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettileinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Tile<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Tile<wbr>Info<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayBufferLike</span>, tileKey<span class="tsd-signature-symbol">: </span><a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a>, projection<span class="tsd-signature-symbol">: </span><a href="../interfaces/_harp_geoutils_lib_projection_projection_.projection.html" class="tsd-signature-type">Projection</a>, displayZoomLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html" class="tsd-signature-type">TileInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/heremaps/harp.gl/blob/e6f5fd0/@here/harp-mapview-decoder/lib/ThemedTileDecoder.ts#L53">harp-mapview-decoder/lib/ThemedTileDecoder.ts:53</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">ArrayBufferLike</span></h5>
+								</li>
+								<li>
+									<h5>tileKey: <a href="_harp_geoutils_lib_tiling_tilekey_.tilekey.html" class="tsd-signature-type">TileKey</a></h5>
+								</li>
+								<li>
+									<h5>projection: <a href="../interfaces/_harp_geoutils_lib_projection_projection_.projection.html" class="tsd-signature-type">Projection</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> displayZoomLevel: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_harp_datasource_protocol_lib_tileinfo_.tileinfo.html" class="tsd-signature-type">TileInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_harp_mapview_decoder_lib_themedtiledecoder_.html">"harp-<wbr>mapview-<wbr>decoder/lib/<wbr>Themed<wbr>Tile<wbr>Decoder"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html" class="tsd-kind-icon">Themed<wbr>Tile<wbr>Decoder</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#languages" class="tsd-kind-icon">languages</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#m_stylesetevaluator" class="tsd-kind-icon">m_<wbr>style<wbr>Set<wbr>Evaluator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#configure" class="tsd-kind-icon">configure</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#decodethemedtile" class="tsd-kind-icon">decode<wbr>Themed<wbr>Tile</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#decodetile" class="tsd-kind-icon">decode<wbr>Tile</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_harp_mapview_decoder_lib_themedtiledecoder_.themedtiledecoder.html#gettileinfo" class="tsd-kind-icon">get<wbr>Tile<wbr>Info</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
