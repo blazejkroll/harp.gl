@@ -58,6 +58,7 @@ import {
 } from "@here/harp-utils";
 import * as THREE from "three";
 
+import { AnimatedExtrusionHandler, AnimatedExtrusionTileHandler } from "./AnimatedExtrusionHandler";
 import { ColorCache } from "./ColorCache";
 import { CopyrightInfo } from "./CopyrightInfo";
 import { DataSource } from "./DataSource";
@@ -437,6 +438,8 @@ export class Tile implements CachedResource {
     private m_visibleArea: number = 0;
 
     private m_resourceInfo: TileResourceInfo | undefined;
+
+    private m_animatedExtrusionTileHandler: AnimatedExtrusionTileHandler | undefined;
 
     /**
      * Creates a new `Tile`.
@@ -853,6 +856,10 @@ export class Tile implements CachedResource {
         this.objects.length = 0;
         if (this.m_preparedTextPaths) {
             this.m_preparedTextPaths = [];
+        }
+
+        if (this.m_animatedExtrusionTileHandler !== undefined) {
+            this.m_animatedExtrusionTileHandler.dispose();
         }
 
         this.placedTextElements.clear();
@@ -1413,12 +1420,22 @@ export class Tile implements CachedResource {
                     }
                 }
 
+                const extrudedObjects: Array<{
+                    object: THREE.Object3D;
+                    materialFeature: boolean;
+                }> = [];
+
                 const renderDepthPrePass =
                     technique.name === "extruded-polygon" && isRenderDepthPrePassEnabled(technique);
 
                 if (renderDepthPrePass) {
                     const depthPassMesh = createDepthPrePassMesh(object as THREE.Mesh);
                     objects.push(depthPassMesh);
+
+                    extrudedObjects.push({
+                        object: depthPassMesh,
+                        materialFeature: true
+                    });
 
                     setDepthPrePassStencil(depthPassMesh, object as THREE.Mesh);
                 }
@@ -1461,8 +1478,45 @@ export class Tile implements CachedResource {
                         false
                     );
 
+                    extrudedObjects.push({
+                        object: edgeObj,
+                        materialFeature: false
+                    });
+
                     this.registerTileObject(edgeObj);
                     objects.push(edgeObj);
+                }
+
+                // animate the extrusion of buildings
+                if (
+                    isExtrudedPolygonTechnique(technique) &&
+                    this.mapView.animatedExtrusionHandler !== undefined
+                ) {
+                    extrudedObjects.push({
+                        object,
+                        materialFeature: true
+                    });
+
+                    const extrudedPolygonTechnique = technique as ExtrudedPolygonTechnique;
+                    const extrusionAnimatonEnabled =
+                        extrudedPolygonTechnique.animateExtrusion !== undefined
+                            ? extrudedPolygonTechnique.animateExtrusion
+                            : AnimatedExtrusionHandler.DEFAULT_ENABLED;
+                    const extrusionAnimatonDuration =
+                        extrudedPolygonTechnique.animateExtrusionDuration !== undefined
+                            ? extrudedPolygonTechnique.animateExtrusionDuration
+                            : AnimatedExtrusionHandler.DEFAULT_DURATION;
+
+                    if (extrusionAnimatonEnabled) {
+                        this.m_animatedExtrusionTileHandler = new AnimatedExtrusionTileHandler(
+                            this,
+                            extrudedObjects,
+                            extrusionAnimatonDuration
+                        );
+                        this.mapView.animatedExtrusionHandler.add(
+                            this.m_animatedExtrusionTileHandler
+                        );
+                    }
                 }
 
                 // Add the fill area edges as a separate geometry.
